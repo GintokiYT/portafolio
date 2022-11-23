@@ -10,10 +10,10 @@ const ToggleMenu = () => {
 
   return (  
     <ContainerToggle
-      onClick={ () => changeTheme() }
+      onClick={ () => changeTheme(theme) }
     >
-      <img src="./assets/images/moon.webp" alt="moon" />
-      <img src="./assets/images/sun.webp" alt="sun" />
+      <img src="./assets/images/moon.webp" alt="moon" style={{width: '15px'}}/>
+      <img src="./assets/images/sun.webp" alt="sun" style={{width: '15px'}}/>
       <ContenedorButton
         initial={{
           y: theme === 'dark'? '5px' : '30px'

@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 
 export const ContainerHeader = styled.header`
   width: 100%;
-  padding: 15px 20px;
+  padding: 10px 20px;
   position: fixed;
+  top: 0;
   background-color: ${ ({theme}) => theme.body };
 `;
 
@@ -48,9 +49,9 @@ export const ButtonMenu = styled.button`
 export const MenuItems = styled(motion.ul)`
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 70px;
   width: 100vw;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 70px);
   background-color: ${ ({theme}) => theme.color };
   list-style: none;
   transform: translateX(100vw);
@@ -61,6 +62,7 @@ export const MenuItems = styled(motion.ul)`
   gap: 30px;
 
   @media (min-width: 768px) {
+    min-height: unset;
     position: relative;
     background-color: transparent;
     top: 0;

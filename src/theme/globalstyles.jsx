@@ -4,6 +4,7 @@ const globalstyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   *,*::after, *::before {
@@ -18,9 +19,28 @@ const globalstyles = createGlobalStyle`
     position: relative;
     min-height: 100vh;
     transition: background .5s ease;
-    scroll-margin-top: 50px;
   }
-  
+
+  img {
+    width: 100%;
+  }
+
+  #inicio {
+    scroll-margin-top: 70px;
+    overflow-x: hidden;
+  }
+
+  #sobreMi {
+    scroll-margin-top: 70px;
+  }
+
+  #proyectos {
+    scroll-margin-top: 70px;
+  }
+
+  #contacto {
+    scroll-margin-top: 70px;
+  }
 `;
 
 export default globalstyles;

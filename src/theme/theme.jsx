@@ -16,6 +16,7 @@ export const LightTheme = {
   toggle: '#161B22',
   color: '#0D1117',
   text: '#1F2428',
+  hover: '#979DA6',
   menu: {
     background: '#161B22',
     text: '#969BA5',

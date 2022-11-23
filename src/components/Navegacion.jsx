@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 import { ContainerHeader, ContainerNav, Title, ButtonMenu, MenuItems } from '../styles/Navegacion.elements';
 import { Container } from '../styles/Components.elements';
@@ -16,7 +16,7 @@ const Navegacion = () => {
         <ContainerNav>
           <Title>Renato Navarro</Title>
           <ButtonMenu
-            onClick={ () => changeMenu() }
+            onClick={ () => changeMenu(menu) }
           >
             { menu === 'close'
               ? <AiOutlineMenu /> 
@@ -24,24 +24,33 @@ const Navegacion = () => {
             }
           </ButtonMenu>
           <MenuItems
-            initial={{
-              x: '100vw'
-            }}
-            animate={{
-              x: menu === 'close'? '100vw' : 0
-            }}
-            transition={{
-              duration: 1
-            }}
+            initial={{ x: '100vw' }}
+            animate={{ x: menu === 'close'? '100vw' : 0 }}
+            transition={{ duration: .5 }}
           >
             <li>
-              <a href="#">Inicio</a>
+              <a 
+                href="#inicio"
+                onClick={ () => changeMenu(menu) }
+              >Inicio</a>
             </li>
             <li>
-              <a href="#">Sobre mí</a>
+              <a 
+                href="#sobreMi"
+                onClick={ () => changeMenu(menu) }
+              >Sobre mí</a>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <a 
+                href="#proyectos"
+                onClick={ () => changeMenu(menu) }
+              >Proyectos</a>
+            </li>
+            <li>
+              <a 
+                href="#contacto"
+                onClick={ () => changeMenu(menu) }
+              >Contacto</a>
             </li>
           </MenuItems>
         </ContainerNav>
