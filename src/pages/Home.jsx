@@ -10,6 +10,9 @@ import Navegacion from '../components/Navegacion';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Proyectos from '../components/Proyectos';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
 import ToggleMenu from '../components/ToggleMenu';
 
 const Home = () => {
@@ -21,26 +24,26 @@ const Home = () => {
       <Globalstyles />
       {/* Encabezado */}
       <Navegacion />
-      {/* Hero */}
-      <section id='inicio'>
-        <Hero />
-      </section>
-      {/* Sobre mí */}
-      <section id='sobreMi'>
-        <About />
-      </section>
-      {/* Proyectos */}
-      <section id='proyectos'>
-        <Proyectos />
-      </section>
-      {/* Contacto */}
-      <section id='contacto'>
-        <h2>Contacto</h2>
-      </section>
+      <main className='main'>
+        {/* Hero */}
+        <section id='inicio'>
+          <Hero />
+        </section>
+        {/* Sobre mí */}
+        <section id='sobreMi'>
+          <About />
+        </section>
+        {/* Proyectos */}
+        <section id='proyectos'>
+          <Proyectos />
+        </section>
+        {/* Contacto */}
+        <section id='contacto'>
+          <Contact />
+        </section>
+      </main>
       {/* Footer */}
-      <footer>
-        <h2>Footer</h2>
-      </footer>
+      <Footer />
       {/* Toogle Theme */}
       <ToggleMenu />
     </ThemeProvider>

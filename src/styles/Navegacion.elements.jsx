@@ -5,6 +5,7 @@ export const ContainerHeader = styled.header`
   width: 100%;
   padding: 10px 20px;
   position: fixed;
+  z-index: 1000;
   top: 0;
   background-color: ${ ({theme}) => theme.body };
 `;

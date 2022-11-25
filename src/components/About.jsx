@@ -21,7 +21,7 @@ const About = () => {
         <EstudiosAbout>
           <p className='studies'>Estudios</p>
           <p>Docencia en especialidad de informática - Universidad Nacional de Educación Enrique Guzmán y Valle</p>
-          <p>Estructuras de datos y algoritmos de JavaScript en <a href="https://www.freecodecamp.org/certification/fcc442809ad-6514-453c-91df-f2a75eb4fea3/javascript-algorithms-and-data-structures" target="__blank" rel="noopener">freeCodeCamp</a> - 2022</p>
+          <p>Estructuras de datos y algoritmos de JavaScript en <a href="https://www.freecodecamp.org/certification/fcc442809ad-6514-453c-91df-f2a75eb4fea3/javascript-algorithms-and-data-structures" target="__blank" rel="noopener noreferrer">freeCodeCamp</a> - 2022</p>
         </EstudiosAbout>
         <IconsAbaout>
           <p className='iconos'>Habilidades Frontend / Backend</p>
@@ -30,6 +30,7 @@ const About = () => {
             <img src="./assets/images/css.png" alt="css" />
             <img src="./assets/images/js.png" alt="js" />
             <img src="./assets/images/sass.png" alt="sass" />
+            <img src="./assets/images/bootstrap.png" alt="Bootstrap" />
             <img src="./assets/images/react.png" alt="react" />
             <img src="./assets/images/git.png" alt="git" />
           </div>
